@@ -56,14 +56,14 @@ console.log(b); // Error, Not Defined
   * In **case 2**: 10 is printed. It means that within nested function too, the global scope variable can be accessed.
   * In **case 3**: 100 is printed meaning local variable of the same name took precedence over a global variable.
   * In **case 4**: A function can access a global variable, but the global execution context can't access any local variable.
-    ```
+    
     To summarize the above points in terms of execution context:
     call_stack = [GEC, a(), c()]
     Now lets also assign the memory sections of each execution context in call_stack.
     c() = [[lexical environment pointer pointing to a()]]
     a() = [b:10, c:{}, [lexical environment pointer pointing to GEC]]
     GEC =  [a:{},[lexical_environment pointer pointing to null]]
-    ```
+
     ![Lexical Scope Explaination](../assets/lexical.jpg "Lexical Scope")
     ![Lexical Scope Explaination](../assets/lexical2.jpg "Lexical Scope")
 
