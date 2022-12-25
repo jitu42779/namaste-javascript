@@ -1,0 +1,14 @@
+[book]
+authors = ["github.com/alok722", "Siva Naik"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Namaste Javascript"
+
+[output.html]
+git-repository-url = "https://github.com/sivanikk/rust"
+edit-url-template = "https://github.com/sivanikk/rust/edit/main/{path}"
+
+[output.html.playground]
+editable = true  
+runnable = true
